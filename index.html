@@ -73,13 +73,16 @@
     <script>
         function calcularNotas() {
             const fase1 = parseFloat(document.getElementById("fase1").value) || 0;
+            const fase1NOTA = fase1 * (100/90) //90 quest = 100 pontos
             const final = parseFloat(document.getElementById("final").value) || 0;
 
             // Etapas do cálculo:
-            const etapaA = final / 10;                  // A. Divide a nota final por 10
+            const etapaA = final / 10;                 // A. Divide a nota final por 10
             const etapaB = etapaA * 3;                 // B. Multiplica o resultado por 3
-            const etapaC = etapaB - fase1;             // C. Subtrai a nota da fase1
+            const etapaC = etapaB - fase1NOTA;         // C. Subtrai a nota da fase1
             const etapaD = etapaC / 2;                 // D. Divide o resultado por 2
+
+            console.log(fase1NOTA)
 
             // Atualizar os campos de 2ª fase
             document.getElementById("fase2-1").value = etapaD.toFixed(2);
