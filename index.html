@@ -13,7 +13,7 @@
             <!-- Campo 1ª fase -->
             <div class="mb-4">
                 <label for="fase1" class="block text-white text-sm mb-2">
-                    1ª fase - coloque número de acerto<br>
+                    <b>1ª FASE</b> - coloque número de acerto (0-27)<br>
                     nota de corte <a href="https://www.fuvest.br/wp-content/uploads/fuvest2024_notas_de_corte.pdf" target="_blank" class="underline">[link pdf 2024]</a><br>
                     ou seu nº de acertos aqui:
                 </label>
@@ -26,7 +26,13 @@
             </div>
             <!-- Campo Fase 2 - Dia 1 -->
             <div class="mb-4">
-                <label for="fase2-1" class="block text-white text-sm mb-2">nota para a 2ª fase, 1 dia</label>
+                <label for="fase2-1" class="block text-white text-sm mb-2">nota para a <b>2ª fase, 1 dia</b>
+                    <span 
+                        class="inline-block bg-gray-800 text-white text-xs rounded-full px-2 py-1 ml-2 cursor-pointer hover:bg-gray-700"
+                        title="50 pts da redação + 50 pts da prova dissertativa de português">
+                        <b>?</b>
+                    </span>
+                </label>
                 <input 
                     type="number" 
                     id="fase2-1" 
@@ -35,7 +41,13 @@
             </div>
             <!-- Campo Fase 2 - Dia 2 -->
             <div class="mb-4">
-                <label for="fase2-2" class="block text-white text-sm mb-2">nota para 2ª fase, 2 dia</label>
+                <label for="fase2-2" class="block text-white text-sm mb-2">nota para <b>2ª fase, 2 dia</b>
+                    <span 
+                    class="inline-block bg-gray-800 text-white text-xs rounded-full px-2 py-1 ml-2 cursor-pointer hover:bg-gray-700"
+                    title="100 pts da prova dissertativa da carreira">
+                    <b>?</b>
+                </span>
+                </label>
                 <input 
                     type="number" 
                     id="fase2-2" 
@@ -45,7 +57,7 @@
             <!-- Campo Final -->
             <div>
                 <label for="final" class="block text-white text-sm mb-2">
-                    coloque aqui os pontos finais<br>
+                    coloque aqui os <b>pontos finais</b><br>
                     na carreira <a href="https://www.fuvest.br/wp-content/uploads/fuvest_2024_notas_minimas_classificacao_aprovado_chamada_1.pdf" target="_blank" class="underline">[link pdf 2024]</a>
                 </label>
                 <input 
