@@ -8,13 +8,12 @@
 </head>
 <body class="bg-blue-50 flex items-center justify-center h-screen">
     <div class="text-center">
-        <br> 
-        <h1 class="text-2xl font-bold mb-6">NOTAS  - FUVEST <br> 2 fase - Estimativa</h1>
+        <h1 class="text-2xl font-bold mt-6">NOTAS - FUVEST</h1>
+        <p>2ª fase - 1D [100pts] 2D [100pts]</p>
         <div class="bg-blue-500 p-6 rounded-lg shadow-lg max-w-md mx-auto">
             <!-- Campo 1ª fase -->
             <div class="mb-4">
                 <label for="fase1" class="block text-white text-sm mb-2">
-                    <br>
                     <b>1ª FASE</b> - coloque o NÚMERO DE ACERTOS<br>
                     veja a nota de corte de 2025 <a href="https://www.fuvest.br/wp-content/uploads/fuvest_2025_notas_de_corte.pdf" target="_blank" class="underline">[link pdf 2025]</a><br>
                 </label>
@@ -90,7 +89,6 @@
             const etapaC = etapaB - fase1NOTA;         // C. Subtrai a nota da fase1
             const etapaD = etapaC / 2;                 // D. Divide o resultado por 2
 
-            console.log(fase1NOTA)
 
             // Atualizar os campos de 2ª fase
             document.getElementById("fase2-1").value = etapaD.toFixed(2);
